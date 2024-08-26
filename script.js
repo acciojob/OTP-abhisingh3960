@@ -13,7 +13,7 @@ codes.forEach((code, index) => {
         }
     });
     
-    code.addEventListener('focus', (e) => {
+    code.addEventListener('focused', (e) => {
         e.target.select();  // This will select the current value so the user can easily overwrite it.
     });
 });
