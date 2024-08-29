@@ -1,35 +1,59 @@
-/*  your css code here. If applicable */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+  font-family: Arial;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: antiquewhite;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 50%;
 }
 
 #verification_heading {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 #verification_subtext {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: dimgray;
+}
+
+#note {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: darkslategray;
 }
 
 .code-container {
-    display: flex;
-    gap: 10px;
+  display: flexbox;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .code {
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 40px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.code:focus {
+  border-color: #007;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
 }
